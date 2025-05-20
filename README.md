@@ -88,136 +88,62 @@ A comprehensive research assistant application designed to help researchers, stu
 ## Performance Evaluation
 
 ### 1. PDF Processing & NLP Performance (Nivedita's Components)
-```vega-lite
-{
-  "title": "PDF Processing & NLP Pipeline Performance",
-  "width": 500,
-  "height": 300,
-  "data": {
-    "values": [
-      {"component": "PDF Text Extraction", "time": 2.1, "accuracy": 98},
-      {"component": "NLP Processing", "time": 1.5, "accuracy": 95},
-      {"component": "Language Model Integration", "time": 2.0, "accuracy": 94},
-      {"component": "Text Analysis", "time": 1.8, "accuracy": 96}
-    ]
-  },
-  "layer": [
-    {
-      "mark": "bar",
-      "encoding": {
-        "x": {"field": "component", "type": "nominal", "axis": {"labelAngle": -45}},
-        "y": {"field": "time", "type": "quantitative", "title": "Processing Time (seconds)"},
-        "color": {"value": "#2196F3"}
-      }
-    },
-    {
-      "mark": {"type": "line", "color": "#FF5722", "point": true},
-      "encoding": {
-        "x": {"field": "component", "type": "nominal"},
-        "y": {"field": "accuracy", "type": "quantitative", "title": "Accuracy (%)", "axis": {"titleColor": "#FF5722"}}
-      }
-    }
-  ]
-}
+
+```mermaid
+%%{init: {'theme': 'dark'}}%%
+graph LR
+    subgraph Performance Metrics
+    A[PDF Text Extraction<br/>Time: 2.1s<br/>Accuracy: 98%] --> B[NLP Processing<br/>Time: 1.5s<br/>Accuracy: 95%]
+    B --> C[Language Model Integration<br/>Time: 2.0s<br/>Accuracy: 94%]
+    C --> D[Text Analysis<br/>Time: 1.8s<br/>Accuracy: 96%]
+    end
 ```
-*Figure 1: PDF Processing and NLP pipeline performance metrics*
+
+| Component | Processing Time (s) | Accuracy (%) |
+|-----------|-------------------|-------------|
+| PDF Text Extraction | 2.1 | 98 |
+| NLP Processing | 1.5 | 95 |
+| Language Model Integration | 2.0 | 94 |
+| Text Analysis | 1.8 | 96 |
 
 ### 2. Search Integration Performance (Shanmukha's Components)
-```vega-lite
-{
-  "title": "Multi-Source Search Performance",
-  "width": 500,
-  "height": 300,
-  "data": {
-    "values": [
-      {"users": 10, "arxiv": 120, "googleScholar": 150, "combined": 180},
-      {"users": 25, "arxiv": 150, "googleScholar": 180, "combined": 200},
-      {"users": 50, "arxiv": 180, "googleScholar": 220, "combined": 250},
-      {"users": 100, "arxiv": 220, "googleScholar": 280, "combined": 300}
-    ]
-  },
-  "mark": "line",
-  "encoding": {
-    "x": {"field": "users", "type": "quantitative", "title": "Concurrent Users"},
-    "y": {"field": "value", "type": "quantitative", "title": "Response Time (ms)"},
-    "color": {
-      "field": "source",
-      "type": "nominal",
-      "scale": {
-        "domain": ["arxiv", "googleScholar", "combined"],
-        "range": ["#4CAF50", "#2196F3", "#FF5722"]
-      }
-    }
-  },
-  "transform": [
-    {"fold": ["arxiv", "googleScholar", "combined"]}
-  ]
-}
+
+```mermaid
+%%{init: {'theme': 'dark'}}%%
+graph LR
+    subgraph Response Times ms
+    A[10 Users] --> B[25 Users] --> C[50 Users] --> D[100 Users]
+    end
+    style A fill:#4CAF50
+    style B fill:#2196F3
+    style C fill:#FF5722
+    style D fill:#9C27B0
 ```
-*Figure 2: Search system response times across different sources*
+
+| Concurrent Users | ArXiv (ms) | Google Scholar (ms) | Combined (ms) |
+|-----------------|------------|-------------------|--------------|
+| 10 | 120 | 150 | 180 |
+| 25 | 150 | 180 | 200 |
+| 50 | 180 | 220 | 250 |
+| 100 | 220 | 280 | 300 |
 
 ### 3. Frontend Performance & Resource Usage (Kalyani's Components)
-```vega-lite
-{
-  "title": "Frontend Performance Metrics",
-  "width": 500,
-  "height": 300,
-  "data": {
-    "values": [
-      {"metric": "Page Load", "initial": 1.2, "optimized": 0.8},
-      {"metric": "Search Response", "initial": 2.0, "optimized": 1.2},
-      {"metric": "PDF Preview", "initial": 3.0, "optimized": 1.5},
-      {"metric": "Citation Graph", "initial": 2.5, "optimized": 1.3}
-    ]
-  },
-  "mark": "bar",
-  "encoding": {
-    "x": {"field": "metric", "type": "nominal"},
-    "y": {"field": "value", "type": "quantitative", "title": "Time (seconds)"},
-    "color": {"field": "version", "type": "nominal"},
-    "column": {"field": "metric", "type": "nominal"}
-  },
-  "transform": [
-    {"fold": ["initial", "optimized"]}
-  ]
-}
-```
-*Figure 3: Frontend performance improvements after optimization*
+
+| Metric | Initial (s) | Optimized (s) | Improvement |
+|--------|------------|--------------|-------------|
+| Page Load | 1.2 | 0.8 | 33% |
+| Search Response | 2.0 | 1.2 | 40% |
+| PDF Preview | 3.0 | 1.5 | 50% |
+| Citation Graph | 2.5 | 1.3 | 48% |
 
 ### 4. Overall System Integration Metrics
-```vega-lite
-{
-  "title": "System Integration Performance",
-  "width": 500,
-  "height": 300,
-  "data": {
-    "values": [
-      {"operation": "Document Upload & Process", "memory": 200, "cpu": 45, "time": 2.1},
-      {"operation": "Search & Retrieval", "memory": 150, "cpu": 35, "time": 1.5},
-      {"operation": "Citation Analysis", "memory": 300, "cpu": 55, "time": 2.5},
-      {"operation": "UI Rendering", "memory": 100, "cpu": 25, "time": 0.8}
-    ]
-  },
-  "layer": [
-    {
-      "mark": "bar",
-      "encoding": {
-        "x": {"field": "operation", "type": "nominal"},
-        "y": {"field": "memory", "type": "quantitative", "title": "Memory Usage (MB)"},
-        "color": {"value": "#2196F3"}
-      }
-    },
-    {
-      "mark": {"type": "line", "color": "#FF5722"},
-      "encoding": {
-        "x": {"field": "operation", "type": "nominal"},
-        "y": {"field": "time", "type": "quantitative", "title": "Processing Time (s)"}
-      }
-    }
-  ]
-}
-```
-*Figure 4: Overall system performance metrics*
+
+| Operation | Memory Usage (MB) | CPU Usage (%) | Processing Time (s) |
+|-----------|------------------|---------------|-------------------|
+| Document Upload & Process | 200 | 45 | 2.1 |
+| Search & Retrieval | 150 | 35 | 1.5 |
+| Citation Analysis | 300 | 55 | 2.5 |
+| UI Rendering | 100 | 25 | 0.8 |
 
 ## Key Performance Achievements
 
@@ -239,43 +165,6 @@ A comprehensive research assistant application designed to help researchers, stu
 - Citation Graph Rendering: 1.3s
 - Browser Memory Usage: <100MB
 
-## Detailed Task Distribution
-
-### PDF Processing & NLP Pipeline (Nivedita Nair)
-1. Core PDF Processing (120 hours)
-   - Text extraction engine implementation (40h)
-   - OCR integration for images (30h)
-   - Metadata extraction system (25h)
-   - Error handling and validation (25h)
-
-2. NLP Features (100 hours)
-   - Text preprocessing pipeline (30h)
-   - Language model integration (40h)
-   - Custom model training (30h)
-
-### Search & API Integration (Shanmukha Manoj)
-1. Search System (140 hours)
-   - ArXiv API integration (40h)
-   - Google Scholar integration (40h)
-   - Search optimization (30h)
-   - Cache implementation (30h)
-
-2. System Architecture (80 hours)
-   - API design and documentation (30h)
-   - Performance optimization (25h)
-   - Security implementation (25h)
-
-### Frontend & Visualization (Kalyani Chitre)
-1. UI Development (120 hours)
-   - React components (40h)
-   - Responsive design (30h)
-   - User interaction features (30h)
-   - Accessibility implementation (20h)
-
-2. Data Visualization (100 hours)
-   - Citation network graphs (40h)
-   - Performance dashboards (30h)
-   - Interactive charts (30h)
 
 ## Implementation Milestones
 1. Phase 1: Core Infrastructure (Week 1-3)
