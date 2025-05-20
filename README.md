@@ -2,6 +2,55 @@
 
 A state-of-the-art platform that combines advanced PDF analysis with comprehensive academic paper search capabilities. This implementation leverages cutting-edge natural language processing and machine learning techniques to provide researchers with powerful tools for academic research.
 
+## System Architecture
+
+![System Architecture](Architecture.png)
+
+Our system follows a modular, service-oriented architecture divided into several key layers:
+
+### Frontend Layer
+- **Web Interface**
+  - Search Form: Handles academic paper queries
+  - Upload Form: Manages document uploads
+  - Results Display: Shows search results and analysis
+  - HTTP-based communication with backend
+
+### Core Backend Services
+1. **Flask API Gateway**
+   - Central REST API interface
+   - Request routing and validation
+   - Response formatting
+   - Error handling
+
+2. **Service Layer**
+   - Search Service: Manages academic paper searches
+   - Analysis Service: Handles document processing
+   - Visualization Service: Generates visual representations
+   - QA System: Processes natural language queries
+   - Rate Limiter: Controls API access
+   - Cache Service: Optimizes response times
+   - File Handler: Manages document operations
+
+3. **Document Processing**
+   - Document Processor: Coordinates processing pipeline
+   - Reference Extractor: Identifies citations and references
+   - Text & Figure Extractor: Extracts content and images
+
+4. **AI & NLP Layer**
+   - Retrieval Augmented Generation (RAG): Enhanced response generation
+   - NLP Engine: Handles summarization, topic analysis, and text processing
+
+5. **External APIs & LLM**
+   - arXiv API: Academic paper database access
+   - SemanticScholar API: Research paper metadata
+   - GoogleScholar API: Citation information
+   - LLaMA 3: Large language model integration
+   - Zotero Integration: Reference management
+
+6. **Storage Layer**
+   - Database: Persistent data storage
+   - Search Index: Optimized content retrieval
+
 ## Technical Architecture
 
 ### Core Components
