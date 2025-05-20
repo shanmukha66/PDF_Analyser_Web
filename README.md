@@ -2,6 +2,19 @@
 
 A state-of-the-art platform that combines advanced PDF analysis with comprehensive academic paper search capabilities. This implementation leverages cutting-edge natural language processing and machine learning techniques to provide researchers with powerful tools for academic research.
 
+## Project Team
+- **Nivedita Nair** 
+  - Email: nivedita.nair@sjsu.edu
+  - Student ID: 018184777
+
+- **Shanmukha Manoj Kakani**
+  - Email: shanmukhamanoj.kakani@sjsu.edu
+  - Student ID: 018195645
+
+- **Kalyani Chitre**
+  - Email: kalyani.chitre@sjsu.edu
+  - Student ID: 017622917
+
 ## System Architecture
 
 ![System Architecture](Architecture.png)
@@ -239,9 +252,10 @@ citation.updated - Citation network updates
 This project is available under the MIT License. See the LICENSE file for details.
 
 ## Team and Acknowledgments
-- Project Lead: [Your Name]
-- Core Contributors: [Team Members]
-- Special thanks to the open-source community
+
+### Special Thanks
+- Special thanks to the open-source community and the maintainers of the libraries used in this project
+- Thanks to San Jose State University for supporting this project
 
 ## References
 1. [BERT Paper](https://arxiv.org/abs/1810.04805)
