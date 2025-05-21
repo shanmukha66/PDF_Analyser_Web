@@ -45,7 +45,7 @@ A comprehensive research assistant application designed to help researchers, stu
 
 ### Project Details
 - **GitHub Repository**: [PDF_Analyser_Web](https://github.com/shanmukha66/PDF_Analyser_Web)
-- **Working Demo**: [Video Demo Link](https://drive.google.com/drive/folders/1oYf4Wa_2135IsQ8LPKltRZ8Ta_qeQmmQ?usp=sharing)
+- **Drive Link**: [Google Drive Link](https://drive.google.com/drive/folders/1oYf4Wa_2135IsQ8LPKltRZ8Ta_qeQmmQ?usp=sharing)
 - **YouTube Demo**: [Watch on YouTube](https://youtu.be/lZojxuGo_X0?feature=shared)
 
 ## System Architecture
