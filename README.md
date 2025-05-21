@@ -44,9 +44,9 @@
 A comprehensive research assistant application designed to help researchers, students, and academics manage, analyze, and extract insights from academic papers and PDF documents. The application provides a range of features including document management, text extraction, translation, summarization, and integration with reference management tools.
 
 ### Project Details
-- **Project Option**: Option 2 - Research Assistant Platform
 - **GitHub Repository**: [PDF_Analyser_Web](https://github.com/shanmukha66/PDF_Analyser_Web)
-- **Working Demo**: [Video Demo Link](https://drive.google.com/drive/folders/your-demo-folder)
+- **Working Demo**: [Video Demo Link](https://drive.google.com/drive/folders/1oYf4Wa_2135IsQ8LPKltRZ8Ta_qeQmmQ?usp=sharing)
+- **YouTube Demo**: [Watch on YouTube](https://youtu.be/lZojxuGo_X0)
 
 ## System Architecture
 
@@ -295,7 +295,7 @@ graph LR
 - Integration with academic databases
 
 ## Video Demo
-The project demonstration video is available [here](https://drive.google.com/drive/folders/your-demo-folder) and includes:
+The project demonstration video is available [here](https://youtu.be/lZojxuGo_X0) and includes:
 - Team member introductions
 - Project overview and architecture explanation
 - Live demonstration of key features:
