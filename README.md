@@ -97,45 +97,6 @@ A comprehensive research assistant application designed to help researchers, stu
 
 ![System Metrics](images/5.jpeg)
 
-### 1. Search Integration Performance
-
-```mermaid
-%%{init: {'theme': 'dark'}}%%
-graph LR
-    subgraph Response Times ms
-    A[10 Users] --> B[25 Users] --> C[50 Users] --> D[100 Users]
-    end
-    style A fill:#4CAF50
-    style B fill:#2196F3
-    style C fill:#FF5722
-    style D fill:#9C27B0
-```
-
-| Concurrent Users | ArXiv (ms) | Google Scholar (ms) | Combined (ms) |
-|-----------------|------------|-------------------|--------------|
-| 10 | 120 | 150 | 180 |
-| 25 | 150 | 180 | 200 |
-| 50 | 180 | 220 | 250 |
-| 100 | 220 | 280 | 300 |
-
-### 4. Frontend Performance & Resource Usage 
-
-| Metric | Initial (s) | Optimized (s) | Improvement |
-|--------|------------|--------------|-------------|
-| Page Load | 1.2 | 0.8 | 33% |
-| Search Response | 2.0 | 1.2 | 40% |
-| PDF Preview | 3.0 | 1.5 | 50% |
-| Citation Graph | 2.5 | 1.3 | 48% |
-
-### 4. Overall System Integration Metrics
-
-| Operation | Memory Usage (MB) | CPU Usage (%) | Processing Time (s) |
-|-----------|------------------|---------------|-------------------|
-| Document Upload & Process | 200 | 45 | 2.1 |
-| Search & Retrieval | 150 | 35 | 1.5 |
-| Citation Analysis | 300 | 55 | 2.5 |
-| UI Rendering | 100 | 25 | 0.8 |
-
 ## Key Performance Achievements
 
 ### PDF Processing & NLP (Nivedita)
