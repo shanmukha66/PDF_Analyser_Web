@@ -1,5 +1,7 @@
 # PDF Analyzer and Academic Search Platform
 
+![Project Overview](images/1.jpeg)
+
 ## Project Team and Task Distribution
 
 ### 1. Nivedita Nair (018184777)
@@ -41,6 +43,8 @@
 
 ## Research Assistant - Project Overview
 
+![Research Assistant Features](images/2.jpeg)
+
 A comprehensive research assistant application designed to help researchers, students, and academics manage, analyze, and extract insights from academic papers and PDF documents. The application provides a range of features including document management, text extraction, translation, summarization, and integration with reference management tools.
 
 ### Project Details
@@ -52,6 +56,8 @@ A comprehensive research assistant application designed to help researchers, stu
 
 ![System Architecture](Architecture.png)
 *Figure 1: High-level system architecture showing component interactions*
+
+![Technical Implementation](images/3.jpeg)
 
 ### Technical Stack
 1. **Frontend** (Kalyani Chitre)
@@ -87,26 +93,11 @@ A comprehensive research assistant application designed to help researchers, stu
 
 ## Performance Evaluation
 
-### 1. PDF Processing & NLP Performance (Nivedita's Components)
+![Performance Overview](images/4.jpeg)
 
-```mermaid
-%%{init: {'theme': 'dark'}}%%
-graph LR
-    subgraph Performance Metrics
-    A[PDF Text Extraction<br/>Time: 2.1s<br/>Accuracy: 98%] --> B[NLP Processing<br/>Time: 1.5s<br/>Accuracy: 95%]
-    B --> C[Language Model Integration<br/>Time: 2.0s<br/>Accuracy: 94%]
-    C --> D[Text Analysis<br/>Time: 1.8s<br/>Accuracy: 96%]
-    end
-```
+![System Metrics](images/5.jpeg)
 
-| Component | Processing Time (s) | Accuracy (%) |
-|-----------|-------------------|-------------|
-| PDF Text Extraction | 2.1 | 98 |
-| NLP Processing | 1.5 | 95 |
-| Language Model Integration | 2.0 | 94 |
-| Text Analysis | 1.8 | 96 |
-
-### 2. Search Integration Performance (Shanmukha's Components)
+### 1. Search Integration Performance
 
 ```mermaid
 %%{init: {'theme': 'dark'}}%%
@@ -127,7 +118,7 @@ graph LR
 | 50 | 180 | 220 | 250 |
 | 100 | 220 | 280 | 300 |
 
-### 3. Frontend Performance & Resource Usage (Kalyani's Components)
+### 4. Frontend Performance & Resource Usage 
 
 | Metric | Initial (s) | Optimized (s) | Improvement |
 |--------|------------|--------------|-------------|
@@ -183,6 +174,30 @@ graph LR
    - User testing
 
 ## Implementation Details
+
+![Implementation Overview](images/6.jpeg)
+
+![Processing Pipeline](images/7.jpeg)
+
+![Integration Flow](images/8.jpeg)
+
+![Deployment Architecture](images/9.jpeg)
+
+![Search Components](images/10.jpeg)
+
+![Analytics Dashboard](images/11.jpeg)
+
+![NLP Pipeline](images/12.jpeg)
+
+![User Interface](images/13.jpeg)
+
+![Data Flow](images/14.jpeg)
+
+![System Integration](images/15.jpeg)
+
+![Performance Results](images/16.jpeg)
+
+![Security Architecture](images/17.jpeg)
 
 ### Core Features Implementation
 1. **Document Management**
