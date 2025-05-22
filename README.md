@@ -99,25 +99,6 @@ A comprehensive research assistant application designed to help researchers, stu
 
 ## Key Performance Achievements
 
-### PDF Processing & NLP (Nivedita)
-- Text Extraction Accuracy: 98%
-- Processing Speed: 2.1 seconds/page
-- Language Model Integration: 94% accuracy
-- Memory Optimization: 200MB/document
-
-### Search Integration (Shanmukha)
-- Multi-source Search Response: <200ms
-- API Integration Success Rate: 99.5%
-- Cache Hit Ratio: 85%
-- Concurrent User Support: 100+
-
-### Frontend & Visualization (Kalyani)
-- Page Load Time: 0.8s (optimized)
-- UI Responsiveness: 60fps
-- Citation Graph Rendering: 1.3s
-- Browser Memory Usage: <100MB
-
-
 ## Implementation Milestones
 1. Phase 1: Core Infrastructure (Week 1-3)
    - Basic PDF processing
